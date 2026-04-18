@@ -1,5 +1,5 @@
 model_name: /data/model/qwen2.5-1.5b
-train_file: data/sft/sft_train_1000.jsonl
+train_file: data/sft/sft_train_1800.jsonl
 output_dir: checkpoints/qwen25_sft_v1
 
 max_length: 512

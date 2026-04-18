@@ -184,7 +184,11 @@ if __name__ == "__main__":
     main()
 
 '''
-python src/eval/base_score.py \
+python -m src.eval.base_score \
   --input_file data/sft/base_outputs_150.jsonl \
   --output_file data/sft/base_outputs_150_scored.jsonl
+
+python -m src.eval.base_score \
+  --input_file data/sft/sft_outputs_150.jsonl \
+  --output_file data/sft/sft_outputs_150_scored.jsonl
 '''
