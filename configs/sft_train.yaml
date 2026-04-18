@@ -1,0 +1,25 @@
+model_name: /data/model/qwen2.5-1.5b
+train_file: data/sft/sft_train_1000.jsonl
+output_dir: checkpoints/qwen25_sft_v1
+
+max_length: 512
+val_ratio: 0.05
+seed: 42
+
+learning_rate: 2e-4
+num_train_epochs: 3
+per_device_train_batch_size: 4
+per_device_eval_batch_size: 4
+gradient_accumulation_steps: 4
+logging_steps: 10
+save_steps: 100
+eval_steps: 100
+warmup_ratio: 0.03
+weight_decay: 0.0
+
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+
+bf16: false
+fp16: true

@@ -1,0 +1,10 @@
+base_model_name: /data/model/qwen2.5-1.5b
+adapter_path: checkpoints/qwen25_sft_v1
+
+input_file: data/sft/sft_eval_150.jsonl
+output_file: data/sft/sft_outputs_150.jsonl
+
+max_new_tokens: 192
+temperature: 0.3
+top_p: 0.8
+do_sample: true

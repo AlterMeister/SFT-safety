@@ -1,0 +1,11 @@
+model_name: /data/model/qwen2.5-1.5b
+input_file: data/sft/sft_eval_150.jsonl
+output_file: data/sft/base_outputs_150.jsonl
+
+max_new_tokens: 192
+temperature: 0.3
+top_p: 0.8
+do_sample: true
+
+device: cuda:1
+torch_dtype: auto
